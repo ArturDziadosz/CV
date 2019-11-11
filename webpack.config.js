@@ -1,4 +1,4 @@
-var path = require('path');
+const path = require('path');
 
 module.exports = {
     entry: "./js/app.js",
@@ -18,7 +18,7 @@ module.exports = {
                     options: { presets: ['es2015'] }
                 }
 
-            },      
+            },
         {
             test: /\.scss$/,
             use: [
@@ -32,8 +32,22 @@ module.exports = {
                 loader: "sass-loader" // compiles Sass to CSS
               }
             ]
+          },
+          {
+            test: /\.(png|jpg|gif)$/,
+            use: [
+              {
+                loader: 'file-loader',
+                options: {
+                  name: '[path][name].[ext]',
+                  context: path.resolve(__dirname, "src/"),
+                  outputPath: 'dist/',
+                  publicPath: '../',
+                  useRelativePaths: true
+                }
+              }
+            ]
           }
         ],
-        
     }
 }
