@@ -1,0 +1,68 @@
+@media screen and (max-width: 425px) {
+  section {
+    margin: 0;
+  }
+  article {
+    padding: 0;
+  }
+  header {
+    padding: 0;
+
+    section {
+      font-size: .9em;
+    }
+  }
+  main {
+    section {
+      .course {
+        padding: 0;
+
+        .description {
+          p {
+            padding: 0;
+          }
+
+          .bootcampContainer {
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 280px;
+            padding: 0;
+
+            .bootcamp {
+              flex: 0 0 50%;
+              max-width: 50%;
+              padding-left: 0;
+            }
+          }
+        }
+      }
+    }
+
+    section {
+      .skills {
+        flex-direction: column;
+        padding-left: 1em;
+
+        .column {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+      }
+    }
+
+    section {
+      article {
+        .job-description {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 325px) {
+  html {
+    font-size: 14px;
+  }
+}

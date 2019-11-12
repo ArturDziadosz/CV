@@ -1,10 +1,13 @@
 @import "main";
+@import "tablet";
 
 html {
   font-size: $fontSize;
   font-family: $fontText;
   line-height: $lineHeight;
 }
+
+@import "mobile";
 
 a {
   text-decoration: none;

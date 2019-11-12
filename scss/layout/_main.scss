@@ -109,14 +109,13 @@ main {
           padding-left: 1em;
 
           .bootcamp {
-            flex: 0 0 33.3%;
-            max-width: 33.3%;
+            flex: 0 0 30%;
+            max-width: 30%;
             padding-left: 1.5em;
 
 
             li {
               line-height: 1.8em;
-              padding-right: 0.5em;
 
               &::before {
                 content: "✔";

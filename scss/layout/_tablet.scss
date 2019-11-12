@@ -1,0 +1,32 @@
+@media screen and (max-width: 768px) {
+
+  main {
+    section {
+      .course {
+        display: flex;
+        flex-direction: column;
+        .title {
+          flex: 0 0 100%;
+          max-width: 100%;
+          margin-bottom: 10px;
+        }
+        .description {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+  .more {
+    margin-top: 10px;
+  }
+  .sectionHobby {
+    .hobbyContainer {
+      flex-direction: column;
+      .hobby {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}
