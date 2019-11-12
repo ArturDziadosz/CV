@@ -38,6 +38,27 @@ header {
     font-weight: bold;
     font-size: 2em;
   }
+  p{
+    margin: 20px 0;
+  }
+  a {
+    color: $colorText;
+    i.fab {
+      border: 1px solid $colorText;
+      border-radius: 50%;
+      font-size: 1.5em;
+      width: 1.5em;
+      height: 1.5em;
+      line-height: 1.5em;
+      margin: 10px;
+      transition: .3s;
+      &:hover {
+        transform: scale(1.3);
+        color: darken($colorMain, 20%);
+        border-color: darken($colorMain, 20%);
+      }
+    }
+  }
 }
 
 
@@ -77,6 +98,7 @@ main {
       .description {
         flex: 0 0 66.6%;
         max-width: 66.6%;
+        text-align: justify ;
 
         p {
           padding-left: 1em;
@@ -194,6 +216,9 @@ main {
 
       a {
         color: $colorAnchor;
+        &:hover {
+          color: darken($colorAnchor, 33%);
+        }
       }
     }
 
@@ -243,5 +268,8 @@ footer {
 
   a {
     color: $colorAnchor;
+    &:hover {
+      color: darken($colorAnchor, 33%);
+    }
   }
 }
