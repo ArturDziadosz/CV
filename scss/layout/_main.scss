@@ -1,5 +1,6 @@
 article {
   padding: 0 1em;
+  line-height: 1.8em;
 }
 
 section {
@@ -13,11 +14,11 @@ header {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  color: #fff;
+  color: $colorText;
 
   section {
     margin: 0 auto;
-    max-width: 640px;
+    max-width: 840px;
     font-size: 1.1em;
     line-height: 1.5em;
   }
@@ -25,8 +26,8 @@ header {
   img {
     max-width: 150px;
     border-radius: 50%;
-    border: 1px solid grey;
-    box-shadow: 2px 2px 5px grey;
+    border: 1px solid $colorBorder;
+    box-shadow: 2px 2px 5px $colorBorder;
     margin-top: 2em;
   }
 
@@ -44,7 +45,7 @@ main {
   max-width: 1140px;
 
   section {
-    border-bottom: 1px solid $colorText;
+    border-bottom: 1px solid $colorBorder;
 
     &:last-of-type {
       border-bottom: none;
@@ -52,7 +53,13 @@ main {
 
     h3 {
       font-weight: 600;
+      font-size: 1.2em;
       text-transform: uppercase;
+      margin: 1em 0;
+    }
+
+    article {
+      margin: 1em 0;
     }
 
     .course {
@@ -62,7 +69,7 @@ main {
       .title {
         font-weight: 600;
         text-transform: uppercase;
-        color: #509e98;
+        color: $colorMain;
         flex: 0 0 33.3%;
         max-width: 33%;
       }
@@ -74,7 +81,31 @@ main {
         p {
           padding-left: 1em;
         }
+
+        .bootcampContainer {
+          display: flex;
+          padding-left: 1em;
+
+          .bootcamp {
+            flex: 0 0 33.3%;
+            max-width: 33.3%;
+            padding-left: 1.5em;
+
+
+            li {
+              line-height: 1.8em;
+              padding-right: 0.5em;
+
+              &::before {
+                content: "✔";
+                padding-right: 0.5em;
+                color: $colorMain;
+              }
+            }
+          }
+        }
       }
+
     }
 
     .skills {
@@ -82,19 +113,111 @@ main {
       flex-wrap: wrap;
 
       .column {
-        flex: 0 0 33.3%;
-        max-width: 33.3%;
+        flex: 0 0 50%;
+        max-width: 50%;
+
+        h4 {
+          margin: 1.5em 0;
+          font-weight: bold;
+        }
 
         ul {
           li {
+            line-height: 1.8em;
             padding-left: 1.5em;
-            //content: "-";
             padding-right: 0.5em;
-            //list-style-type: circle;
-            div {
-              height: 20px;
-              width: 20px;
+
+            &::before {
+              content: "►";
+              padding-right: 0.5em;
+              color: $colorMain;
             }
+          }
+        }
+
+        .language {
+          li {
+            position: relative;
+            padding-left: 4em;
+
+            &::before {
+              content: "";
+              display: block;
+              position: absolute;
+              padding-right: 0;
+              left: 1.5em;
+              top: 0.1em;
+              width: 1.5em;
+              height: 1.5em;
+              background-size: cover;
+            }
+          }
+        }
+      }
+    }
+
+    .school {
+      text-transform: capitalize;
+      font-weight: bold;
+
+      span {
+        color: $colorDate;
+        text-decoration: underline;
+      }
+    }
+
+    .job {
+      span {
+        color: $colorDate;
+        text-decoration: underline;
+      }
+
+      strong {
+        font-weight: bold;
+      }
+    }
+
+    .job-description {
+      padding-left: 2em;
+
+      li {
+        &::before {
+          content: "✔";
+          padding-right: 0.5em;
+          color: $colorMain;
+        }
+      }
+    }
+
+    .more {
+      text-align: right;
+
+      a {
+        color: $colorAnchor;
+      }
+    }
+
+    .hobbyContainer {
+      display: flex;
+
+      .hobby {
+        flex: 0 0 50%;
+        max-width: 50%;
+
+        li {
+          position: relative;
+          padding-left: 4em;
+
+          &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            padding-right: 0;
+            left: 1.5em;
+            top: 0.1em;
+            width: 1.5em;
+            height: 1.5em;
+            background-size: cover;
           }
         }
       }
@@ -102,21 +225,23 @@ main {
   }
 }
 
-.school {
-  text-transform: capitalize;
-  span {
-    color: #A7B8BF;
+.sectionHobby {
+  .more {
+    padding-right: 1em;
   }
 }
 
 footer {
-  padding: 1em 0;
+  padding: 1.5em 0;
   text-align: right;
-  background-color: lighten(#509e98,20%);
+  background-color: lighten($colorMain, 20%);
+
   p {
     padding-right: 1em;
+    color: $colorText;
   }
+
   a {
-    color: #000;
+    color: $colorAnchor;
   }
 }
