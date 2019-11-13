@@ -6,13 +6,13 @@ body {
 }
 
 p {
-  font-size: 13px;
+  font-size: 10px;
   line-height: 10px;
   font-weight: 900;
   margin: 0;
   background: url("../assets/tumblr_nptm6toUmf1rvfm5no1_500.gif") no-repeat;
   background-size: contain;
-  background-position: center;
+  background-position: top;
   background-attachment: fixed;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(0, 0, 0, 0);
