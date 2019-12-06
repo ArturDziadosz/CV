@@ -245,6 +245,58 @@ main {
         }
       }
     }
+
+    .projects {
+      display: flex;
+      justify-content: space-around;
+      padding-bottom: 2em;
+      margin-bottom: 0;
+
+      .project {
+        flex: 0 0 35%;
+        height: 300px;
+        box-shadow: 3px 3px 3px #000, 2px 2px 2px #000, 1px 1px 1px #000;
+        border: 1px solid #000;
+
+        iframe {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .technologies {
+        height: 300px;
+        flex: 0 0 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+
+        div {
+          width: 100%;
+          height: 33%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+
+
+          i {
+            font-size: 2em;
+            padding: 10px;
+          }
+
+          a {
+            color: $colorMain;
+            font-weight: bold;
+          }
+        }
+
+
+
+      }
+
+    }
   }
 
   .school {
@@ -348,22 +400,30 @@ footer {
 }
 
 section {
- &:nth-of-type(2) {
-   opacity: 0;
-   transform: translateX(-200px);
- }
-  &:nth-of-type(3) {
+  &:nth-of-type(2) {
     opacity: 0;
     transform: translateX(200px);
   }
-  &:nth-of-type(4) {
+  &:nth-of-type(3) {
     opacity: 0;
     transform: translateX(-200px);
   }
-  &:nth-of-type(5) {
+
+  &:nth-of-type(4) {
     opacity: 0;
     transform: translateX(200px);
   }
+
+  &:nth-of-type(5) {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+
+  &:nth-of-type(6) {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+
   .course {
     opacity: 0;
   }
@@ -375,13 +435,14 @@ section.fade-in, article.fade-in {
   transition: 2s;
 }
 
-@media (min-width:1440px) {
+@media (min-width: 1440px) {
   header {
     h1 {
       position: absolute;
       left: 0;
       width: 100vw;
     }
+
     p {
       margin: 95px 0 20px;
     }
