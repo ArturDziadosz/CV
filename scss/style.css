@@ -2,15 +2,15 @@ header {
   background-image: url("../images/frontend_1200x675-.jpg");
 }
 
-.language li:nth-of-type(2)::before {
+.language li:nth-of-type(1)::before {
   background-image: url("../images/flag-for-england.png");
 }
 
-.language li:nth-of-type(1)::before {
-  background-image: url("../images/flag-for-poland_1f1f5-1f1f1.png");
-}
+/*.language li:nth-of-type(1)::before {*/
+/*  background-image: url("../images/flag-for-poland_1f1f5-1f1f1.png");*/
+/*}*/
 
-.language li:nth-of-type(3)::before {
+.language li:nth-of-type(2)::before {
   background-image: url("../images/flag-for-spain_1f1ea-1f1f8.png");
 }
 
@@ -40,4 +40,29 @@ header {
 
 .smile {
   background-image: url("../images/smiling-face-with-smiling-eyes_1f60a.png");
+}
+
+.jQuery {
+  background-image: url("../images/JQuery_logo-512.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  width: 4em;
+  height: 2em;
+}
+
+.webpack {
+  background-image: url("../images/webpack.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  width: 2em;
+  height: 2em;
+}
+
+.photo {
+  background-image: url("../images/IMG_9364c.jpg");
+  background-size: cover;
 }

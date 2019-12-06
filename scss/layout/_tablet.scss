@@ -1,18 +1,47 @@
 @media screen and (max-width: 768px) {
+  header {
+    h1 {
+      span {
+        &:first-of-type {
+          transform: translateX(calc(-51vw));
+        }
 
+        &:last-of-type {
+          transform: translateX(51vw);
+        }
+      }
+    }
+  }
   main {
     section {
       .course {
         display: flex;
         flex-direction: column;
+
         .title {
           flex: 0 0 100%;
           max-width: 100%;
           margin-bottom: 10px;
         }
+
         .description {
           flex: 0 0 100%;
           max-width: 100%;
+        }
+      }
+
+      .skills {
+        .column {
+          .knowledge {
+            display: block;
+            padding: 0;
+            li {
+              &:nth-of-type(2n) {
+                display: block;
+                position: static;
+              }
+            }
+          }
         }
       }
     }
@@ -23,6 +52,7 @@
   .sectionHobby {
     .hobbyContainer {
       flex-direction: column;
+
       .hobby {
         flex: 0 0 100%;
         max-width: 100%;

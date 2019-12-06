@@ -6,10 +6,12 @@
     padding: 0;
   }
   header {
-    padding: 0;
-
+    .photo {
+      margin-top: 0;
+    }
     section {
       font-size: .9em;
+
     }
   }
   main {
