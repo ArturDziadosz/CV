@@ -1,0 +1,177 @@
+@media screen and (max-width: 1300px) {
+  main {
+    section {
+      .projects {
+
+        .project {
+
+          .video {
+            flex: 0 0 400px;
+          }
+
+          .technologies {
+            flex: 0 0 27%;
+
+            div {
+
+
+              i {
+
+              }
+
+              a {
+
+              }
+            }
+
+
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  main {
+    section {
+      .projects {
+        flex-direction: column;
+        .project {
+          justify-content: center;
+          &:first-of-type {
+            padding-bottom: 25px;
+          }
+          .video {
+            flex: 0 0 500px;
+          }
+
+          .technologies {
+            flex: 0 0 15%;
+            div {
+
+
+              i {
+
+              }
+
+              a {
+
+              }
+            }
+
+
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    section {
+      .projects {
+        .project {
+          &:first-of-type {
+          }
+          .video {
+            flex: 0 0 400px;
+          }
+
+          .technologies {
+            flex: 0 0 25%;
+            div {
+
+
+              i {
+
+              }
+
+              a {
+
+              }
+            }
+
+
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main {
+    section {
+      .projects {
+        .project {
+          flex-direction: column-reverse;
+          align-items: center;
+          &:first-of-type {
+          }
+          .video {
+            width: 95%;
+            max-height: 300px;
+          }
+
+          .technologies {
+            width: 95%;
+            flex-direction: row;
+            padding-top: 5px;
+            div {
+
+
+              i {
+
+              }
+
+              a {
+
+              }
+            }
+
+
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 390px) {
+  main {
+    section {
+      .projects {
+        .project {
+
+          &:first-of-type {
+          }
+          .video {
+            max-height: 250px;
+          }
+
+          .technologies {
+
+            div {
+              width: auto;
+              &:last-of-type {
+                padding-left: 5px;
+              }
+
+              i {
+
+              }
+
+              a {
+
+              }
+            }
+
+
+          }
+        }
+      }
+    }
+  }
+}

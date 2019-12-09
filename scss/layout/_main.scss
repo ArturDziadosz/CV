@@ -253,49 +253,51 @@ main {
       margin-bottom: 0;
 
       .project {
-        flex: 0 0 35%;
-        height: 300px;
-        box-shadow: 3px 3px 3px #000, 2px 2px 2px #000, 1px 1px 1px #000;
-        border: 1px solid #000;
-
-        iframe {
-          width: 100%;
-          height: 100%;
-        }
-      }
-
-      .technologies {
-        height: 300px;
-        flex: 0 0 10%;
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: flex-end;
+        flex: 0 0 48%;
 
-        div {
-          width: 100%;
-          height: 33%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-wrap: wrap;
-
-
-          i {
-            font-size: 2em;
-            padding: 10px;
-          }
-
-          a {
-            color: $colorMain;
-            font-weight: bold;
-          }
+        .video {
+          flex: 0 0 500px;
+          height: 300px;
+          box-shadow: 3px 3px 3px #000, 2px 2px 2px #000, 1px 1px 1px #000;
+          border: 1px solid #000;
         }
 
+        .technologies {
+          height: 300px;
+          flex: 0 0 20%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: flex-end;
+
+          div {
+            width: 100%;
+            height: 33%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
 
 
+            i {
+              font-size: 2em;
+              padding: 10px;
+            }
+
+            a {
+              color: $colorMain;
+              font-weight: bold;
+              transition: transform .5s;
+              &:hover {
+                transform: scale(1.2);
+              }
+            }
+          }
+
+
+        }
       }
-
     }
   }
 
@@ -404,6 +406,7 @@ section {
     opacity: 0;
     transform: translateX(200px);
   }
+
   &:nth-of-type(3) {
     opacity: 0;
     transform: translateX(-200px);
