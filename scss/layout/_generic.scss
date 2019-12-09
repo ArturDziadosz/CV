@@ -6,6 +6,7 @@ html {
   font-size: $fontSize;
   font-family: $fontText;
   line-height: $lineHeight;
+  overflow-x: hidden;
 }
 
 @import "mobile";
