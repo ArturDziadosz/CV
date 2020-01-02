@@ -246,13 +246,19 @@ main {
       }
     }
 
+    .projectsTitle {
+      margin-bottom: 0;
+    }
+
     .projects {
       display: flex;
       justify-content: space-around;
       padding-bottom: 2em;
       margin-bottom: 0;
+      flex-wrap: wrap;
 
       .project {
+        margin-top: 2em;
         display: flex;
         flex: 0 0 48%;
 
@@ -289,6 +295,7 @@ main {
               color: $colorMain;
               font-weight: bold;
               transition: transform .5s;
+
               &:hover {
                 transform: scale(1.2);
               }

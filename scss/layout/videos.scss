@@ -39,9 +39,7 @@
         flex-direction: column;
         .project {
           justify-content: center;
-          &:first-of-type {
-            padding-bottom: 25px;
-          }
+
           .video {
             flex: 0 0 500px;
           }
