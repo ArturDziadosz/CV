@@ -10,7 +10,7 @@
           }
 
           .technologies {
-            flex: 0 0 27%;
+            flex: 0 0 22%;
 
             div {
 
@@ -35,6 +35,11 @@
 @media screen and (max-width: 1140px) {
   main {
     section {
+
+      .projectsTitle {
+        text-align: center;
+      }
+
       .projects {
         flex-direction: column;
         .project {
@@ -45,7 +50,7 @@
           }
 
           .technologies {
-            flex: 0 0 15%;
+            flex: 0 0 12%;
             div {
 
 
@@ -103,10 +108,15 @@
   main {
     section {
       .projects {
+        padding-bottom: 0;
+
         .project {
           flex-direction: column-reverse;
           align-items: center;
+          margin-top: 0;
+
           &:first-of-type {
+            margin-top: 2em;
           }
           .video {
             width: 95%;
@@ -118,8 +128,8 @@
             flex-direction: row;
             padding-top: 5px;
             div {
-
-
+              width: auto;
+              height: 25%;
               i {
 
               }

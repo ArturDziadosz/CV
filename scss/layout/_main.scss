@@ -271,11 +271,12 @@ main {
 
         .technologies {
           height: 300px;
-          flex: 0 0 20%;
+          flex: 0 0 19%;
           display: flex;
           flex-direction: column;
           justify-content: space-around;
           align-items: flex-end;
+          padding-right: 10px;
 
           div {
             width: 100%;
@@ -288,7 +289,12 @@ main {
 
             i {
               font-size: 2em;
-              padding: 10px;
+              padding: 1px;
+              display: block;
+              width: 42px;
+              height: 42px;
+              text-align: center;
+              line-height: 42px;
             }
 
             a {
@@ -408,8 +414,8 @@ footer {
   }
 }
 
-section {
-  &:nth-of-type(2) {
+main.container section {
+  &:nth-of-type(1) {
     opacity: 0;
     transform: translateX(200px);
   }
@@ -439,7 +445,7 @@ section {
   }
 }
 
-section.fade-in, article.fade-in {
+main.container section.fade-in,main.container article.fade-in {
   opacity: 1;
   transform: translateX(0);
   transition: 2s;
