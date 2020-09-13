@@ -12,17 +12,17 @@
           .technologies {
             flex: 0 0 22%;
 
-            div {
+            // div {
 
 
-              i {
+            //   i {
 
-              }
+            //   }
 
-              a {
+            //   a {
 
-              }
-            }
+            //   }
+            // }
 
 
           }
@@ -51,17 +51,17 @@
 
           .technologies {
             flex: 0 0 12%;
-            div {
+            // div {
 
 
-              i {
+            //   i {
 
-              }
+            //   }
 
-              a {
+            //   a {
 
-              }
-            }
+            //   }
+            // }
 
 
           }
@@ -76,25 +76,25 @@
     section {
       .projects {
         .project {
-          &:first-of-type {
-          }
+          // &:first-of-type {
+          // }
           .video {
             flex: 0 0 400px;
           }
 
           .technologies {
             flex: 0 0 25%;
-            div {
+            // div {
 
 
-              i {
+            //   i {
 
-              }
+            //   }
 
-              a {
+            //   a {
 
-              }
-            }
+            //   }
+            // }
 
 
           }
@@ -127,16 +127,20 @@
             width: 95%;
             flex-direction: row;
             padding-top: 5px;
+            padding-bottom: 25px;
+            align-items: center;
+            height: auto;
+            padding-right: 0;
             div {
               width: auto;
               height: 25%;
-              i {
+              // i {
 
-              }
+              // }
 
-              a {
+              // a {
 
-              }
+              // }
             }
 
 
@@ -153,8 +157,8 @@
       .projects {
         .project {
 
-          &:first-of-type {
-          }
+          // &:first-of-type {
+          // }
           .video {
             max-height: 250px;
           }
@@ -167,13 +171,13 @@
                 padding-left: 5px;
               }
 
-              i {
+              // i {
 
-              }
+              // }
 
-              a {
+              // a {
 
-              }
+              // }
             }
 
 
